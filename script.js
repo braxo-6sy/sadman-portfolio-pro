@@ -139,7 +139,7 @@ if (contactForm) {
         );
 
         window.location.href =
-            `mailto:YOUR_EMAIL@example.com?subject=${subject}&body=${body}`;
+            `mailto:bdnytrix@gmail.com?subject=${subject}&body=${body}`;
     });
 }
 
