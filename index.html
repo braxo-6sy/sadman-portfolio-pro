@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sadman's personal portfolio. Explore my journey in web development, technology, creativity and programming.">
+
+<meta name="theme-color" content="#080d19">
+
+<meta name="author" content="Sadman">
 
     <title>Sadman | Personal Portfolio</title>
 
@@ -70,8 +75,8 @@
 
         <div class="hero-image">
             <div class="image-glow">
-                <img src="profile.png"
-     alt="Sadman Profile Picture">
+                <img src="assets/profile.png"
+                     alt="Sadman Profile Picture">
             </div>
         </div>
 
@@ -88,15 +93,16 @@
         <div class="about-content">
             <div class="about-text">
 
-                <h3>I'm Sadman, a Beginner Web Developer.</h3>
+                <h3>I'm Sadman, an Aspiring Web Developer</h3>
 
                 <p>
-                    I am passionate about technology, creativity
-                    and web development. I enjoy learning HTML,
-                    CSS and JavaScript to build modern websites.
-                    My goal is to become a professional Computer
-                    Engineer and create amazing digital experiences.
-                </p>
+    I'm passionate about technology and web development.
+    I enjoy learning HTML, CSS, and JavaScript to create
+    modern, responsive, and interactive websites.
+    My goal is to become a professional Computer Engineer
+    and build amazing digital experiences.
+</p>
+                
 
                 <a href="#contact" class="btn">Let's Talk</a>
 
@@ -263,25 +269,27 @@
             <h2>Contact <b>Me</b></h2>
         </div>
 
-        <form class="contact-form" id="contactForm">
+   
+<form id="contactForm" action="https://formsubmit.co/bdnytrix@gmail.com" method="POST">
 
-            <input type="text" id="name"
-                   placeholder="Your Name" required>
+    <input type="text" id="name" name="name"
+           placeholder="Your Name" required>
 
-            <input type="email" id="email"
-                   placeholder="Your Email" required>
+    <input type="email" id="email" name="email"
+           placeholder="Your Email" required>
 
-            <textarea id="message"
-                      placeholder="Your Message"
-                      required></textarea>
+    <textarea id="message" name="message"
+              placeholder="Your Message" required></textarea>
 
-            <button type="submit" class="btn">
-                Send Message →
-            </button>
+    <input type="hidden" name="_subject"
+           value="New Message - Sadman Portfolio">
 
-        </form>
+    <button type="submit" class="btn">
+        Send Message →
+    </button>
 
-    </section>
+</form>
+
 
     <!-- JavaScript -->
     <script src="script.js"></script>
