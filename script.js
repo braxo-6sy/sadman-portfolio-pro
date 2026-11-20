@@ -129,39 +129,22 @@ if (contactForm) {
     contactForm.addEventListener("submit", function(e) {
         e.preventDefault();
 
-        const name = document.getElementById("name").value;
-        const email = document.getElementById("email").value;
-        const message = document.getElementById("message").value;
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const message = document.getElementById("message").value.trim();
 
-        const subject = encodeURIComponent("Portfolio Contact");
+        const subject = encodeURIComponent("Portfolio Contact - " + name);
+
         const body = encodeURIComponent(
             `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
         );
 
-        window.location.href =
-            `mailto:bdnytrix@gmail.com?subject=${subject}&body=${body}`;
+        const gmailURL =
+            `https://mail.google.com/mail/?view=cm&fs=1&to=bdnytrix@gmail.com&su=${subject}&body=${body}`;
+
+        window.open(gmailURL, "_blank");
     });
 }
-
-document.querySelectorAll(
-    '.project-card, .skill-card, .btn, .social-links a'
-).forEach(element => {
-
-    element.addEventListener('click', function () {
-
-        this.classList.remove('tap-animate');
-
-        void this.offsetWidth;
-
-        this.classList.add('tap-animate');
-
-        this.addEventListener('animationend', function () {
-            this.classList.remove('tap-animate');
-        }, { once: true });
-
-    });
-
-});
 
 /* MOBILE PREMIUM TAP ANIMATION */
 
